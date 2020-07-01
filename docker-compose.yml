@@ -1,0 +1,11 @@
+version: "3"
+services:
+  default:
+    build: .
+    container_name: golink
+    restart: always
+    tty: true
+    ports:
+      - "80:8067"
+    volumes:
+      - "./data:/data"
